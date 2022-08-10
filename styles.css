@@ -591,15 +591,15 @@ body{
 #contact h3{
   font-size: 4vw;
   font-weight: 900;
-  background-color: #fff;
-  color: #E65C4F;
+  background-color: #262322;
+  color: #6f5adc;
   display: block;
   padding: 0.3em;
 }
 
 #contact h3:nth-child(2){
   position: absolute;
-  background-color: #F2E5D7;
-  color: #78A6C8;
+  background-color: #E65C4F;
+  color: #fff;
   clip-path: inset(-1% -1% 50% -1%);
 }
