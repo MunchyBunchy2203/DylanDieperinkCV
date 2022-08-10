@@ -191,14 +191,11 @@ body{
   border-radius: 40%;
 }
 
+/*------------- Education Styling -------------*/
+
 #education{
   padding: 20px 0;
   background: #F2E5D7;
-}
-
-.education-wrapper{
-  display: flex;
-  flex-wrap: wrap;
 }
 
 #education h2{
@@ -235,14 +232,25 @@ body{
 }
 
 #education .btn{
-  transform: translateX(250%);
+  text-align: center;
+  display: flex;
+  flex: content;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+
+/*-------------- CERTIFICATION Styling------------------*/
 
 #certification{
   padding: 20px 0;
   background-color: #fff;
-  align-items: center;
-  align-self: center;
+}
+
+.certification-container{
+  display: block;
+  flex-wrap: wrap;
+  height: 750px;
 }
 
 #certification h2{
@@ -255,11 +263,9 @@ body{
 #certification .cardbox{
   font-size: 1.2em;
   margin: 1% 0 0 1%;
-  perspective: 800px;
+  perspective: 100%;
   transition: all 0.3s ease 0s;
   width: 23.7%;
-  align-items: center;
-  align-self: center;
 }
 
 #certification .cardBox:hover .card{
@@ -267,15 +273,17 @@ body{
 }
 
 #certification .card{
-  background: linear-gradient(45deg, #252322, #F2E5D7);
+  background: linear-gradient(30deg, #fff , #E65C4F ,#78A6C8 , #Fff);
   cursor: default;
   height: 350px;
+  border: none;
+  border-radius: 40px 10px;
   transform-style: preserve-3d;
   transition: transform 0.4s ease 0s;
-  width: 80%;
+  width: 60%;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
-  align-self: center;
+  float: initial;
 }
 
 #certification .card p{
@@ -318,6 +326,10 @@ body{
   width: 100%;
 }
 
+#certification .HP .card{
+  float: right;
+}
+
 @-webkit-keyframes giro{
   from{
     transform: rotateY(180deg);
@@ -334,4 +346,16 @@ body{
   to{
     transform: rotateY(0deg);
   }
+}
+
+/*----------------- Experience Styling -----------*/
+
+#experience{
+  padding: 20px;
+  background-color: #F2E5D7;
+}
+
+.experience-container{
+  display: flex;
+  flex-wrap: wrap;
 }
