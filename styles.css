@@ -288,13 +288,14 @@ body{
 
 #certification .card p{
   margin-bottom: 1.8em;
+  vertical-align: middle;
 }
 
 #certification .card .front,
 .card .back{
   backface-visibility: hidden;
   box-sizing: border-box;
-  color: white;
+  color: #262322;
   display: block;
   font-size: 1.2em;
   height: 100%;
@@ -304,7 +305,7 @@ body{
 }
 
 #certification .card .front strong{
-  background: #fff;
+  background: transparent;
   border-radius: 100%;
   color: #222;
   font-size: 1.5em;
@@ -358,4 +359,11 @@ body{
 .experience-container{
   display: flex;
   flex-wrap: wrap;
+}
+
+#experience h2{
+  padding: 10px;
+  text-align: center;
+  font-size: 3.3rem;
+  color: #262322;
 }
