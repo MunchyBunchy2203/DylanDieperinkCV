@@ -564,7 +564,7 @@ body{
 
 #contact{
   padding: 20px;
-  background-color: #fff;
+  background-color: #E9EEF2;
 }
 
 #contact h2{
@@ -588,18 +588,22 @@ body{
   justify-content: center;
 }
 
+#contact h3 a:link{
+  color: #fff ;
+}
+
 #contact h3{
-  font-size: 4vw;
-  font-weight: 900;
-  background-color: #262322;
-  color: #6f5adc;
+  font-size: 2vw;
+  font-weight: 400;
+  background-color: #1e1a20;
+  color: #E9EEF2;
   display: block;
   padding: 0.3em;
 }
 
 #contact h3:nth-child(2){
   position: absolute;
-  background-color: #E65C4F;
-  color: #fff;
+  background-color: #1e1a20;
+  color: #E65C4F;
   clip-path: inset(-1% -1% 50% -1%);
 }
