@@ -261,9 +261,10 @@ body{
 }
 
 #certification .cardbox{
+  float: left;
   font-size: 1.2em;
   margin: 1% 0 0 1%;
-  perspective: 100%;
+  perspective: 800px;
   transition: all 0.3s ease 0s;
   width: 23.7%;
 }
@@ -273,18 +274,16 @@ body{
 }
 
 #certification .card{
-  background: linear-gradient(30deg, #fff , #E65C4F ,#78A6C8 , #Fff);
+  background: linear-gradient(#fff,#E65C4F );
   cursor: default;
   height: 350px;
   border: none;
   border-radius: 40px 10px;
   transform-style: preserve-3d;
   transition: transform 0.4s ease 0s;
-  width: 60%;
+  width: 45%;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
-  float: initial;
-  vertical-align: middle;
 }
 
 #certification .card p,h3{
@@ -303,7 +302,6 @@ body{
   position: absolute;
   text-align: center;
   width: 100%;
-  align-items: center;
 }
 
 #certification .card .front strong{
@@ -319,10 +317,16 @@ body{
   transform: rotateY(180deg);
 }
 
+#certification .cardbox:nth-child(1) .card{
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
 #certification .cardbox:nth-child(2) .card{
   -webkit-animation: giro 1.5s 1;
   animation: giro 1.5s 1;
 }
+
 
 #certification img{
   height: 350px;
