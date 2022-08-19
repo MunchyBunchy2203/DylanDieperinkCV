@@ -493,11 +493,11 @@ body{
 }
 
 #experience .container.left .icon { /* big circle left side */
-  right: 40%;
+  right: 50%;
 }
 
 #experience .container.right .icon { /* big circle right side */
-  left: 40%;
+  left: 50%;
 }
 
 #experience .container .content {
