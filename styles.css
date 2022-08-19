@@ -396,7 +396,7 @@ body{
   padding: 15px 0;
 }
 
-#experience .timeline::after {
+#experience .timeline::after { /*center line*/
   content: '';
   position: absolute;
   width: 3px;
@@ -404,7 +404,6 @@ body{
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -1px;
 }
 
 #experience .container {
@@ -414,44 +413,46 @@ body{
   width: 50%;
 }
 
-#experience .container.left {
+#experience .container.left { /* text for left side */
   left: 0%;
 }
 
-#experience .container.right {
+#experience .container.right { /* text for right side */
   left: 50%;
 }
 
-#experience .container::after {
+#experience .container::after { /* small circle adn left side*/
   content: '';
   position: absolute;
   width: 16px;
   height: 16px;
   top: calc(1% - 8px);
-  right: 0px;
+  right: 0%;
+  margin-right: -10px;
   background: #36323C;
   border: 2px solid #6f5adc;
   border-radius: 16px;
   z-index: 1;
 }
 
-#experience .container.right::after {
-  left: -5%;
+#experience .container.right::after { /* small circle for right side*/
+  left: 0%;
+  margin-left: -5px;
 }
 
-#experience .container::before {
+#experience .container::before { /* line for both sides */
   content: '';
   position: absolute;
-  width: 60px;
+  width: 40%;
   height: 2px;
   top: calc(1% - 1px);
-  right: 0%;
+  left: 60%;
   background: #6f5adc;
   z-index: 1;
 }
 
-#experience .container.right::before {
-  left: 5%;
+#experience .container.right::before { /* line for right side */
+  left: 0%;
 }
 
 #experience .container .date {
@@ -475,7 +476,7 @@ body{
   left: -95%;
 }
 
-#experience .container .icon {
+#experience .container .icon { /* big circle both sides */
   position: absolute;
   display: inline-block;
   width: 40px;
@@ -491,23 +492,23 @@ body{
   z-index: 1;
 }
 
-#experience .container.left .icon {
-  left: 40%;
+#experience .container.left .icon { /* big circle left side */
+  right: 40%;
 }
 
-#experience .container.right .icon {
+#experience .container.right .icon { /* big circle right side */
   left: 40%;
 }
 
 #experience .container .content {
-  padding: 3px 9px 3px 3px;
+  padding: 10px 9px 30px 10px;
   background: #1e1a20;
   position:static;
   border-radius: 0 50px 50px 0;
 }
 
 #experience .container.right .content {
-  padding: 3px 3px 3px 9px;
+  padding: 10px 3px 30px 10px;
   border-radius: 50px 0 0 50px;
 }
 
@@ -525,7 +526,7 @@ body{
   color: #fff;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 100%) {
   .timeline::after {
     left: 90px;
   }
