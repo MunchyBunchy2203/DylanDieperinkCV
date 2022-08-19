@@ -436,13 +436,13 @@ body{
 }
 
 #experience .container.right::after {
-  left: -8px;
+  left: -5%;
 }
 
 #experience .container::before {
   content: '';
   position: absolute;
-  width: 50px;
+  width: 60px;
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
@@ -451,7 +451,7 @@ body{
 }
 
 #experience .container.right::before {
-  left: 8px;
+  left: 5%;
 }
 
 #experience .container .date {
@@ -492,7 +492,7 @@ body{
 }
 
 #experience .container.left .icon {
-  right: 56px;
+  left: 56px;
 }
 
 #experience .container.right .icon {
@@ -542,7 +542,7 @@ body{
 
   .container.left::after, 
   .container.right::after {
-    left: 82px;
+    left: 96%;
   }
 
   .container.left::before,
