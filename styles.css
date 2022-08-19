@@ -55,7 +55,7 @@ body{
 .navbar{
     box-shadow: 0px 5px 10px 0px #aaa;
     position: fixed;
-    width:auto;
+    width:fit-content;
     background: #E65C4F;
     color: #E9EEF2;
     opacity: 0.85;
