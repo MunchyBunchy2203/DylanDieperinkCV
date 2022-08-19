@@ -11,13 +11,13 @@
 
 body{
     font-family: "Poppins",sans-serif;
+    margin: 0;
 }
 
 /*-------- Utility Classes -----------*/
 
 .container {
     max-width: 1200px;
-    width: 90%;
     margin: auto;
 }
 
@@ -155,8 +155,8 @@ body{
 }
 
 .about-img {
-  flex: 1 1 400px;
-  padding: 30px;
+  flex: 1 1 500px;
+  padding: 10px;
   transform: translateX(100%);
   animation: about-img-animation 1s ease-in-out forwards;
 }
@@ -186,16 +186,22 @@ body{
   height: 400px;
   max-width: 100%;
   margin: auto;
-  object-fit: cover;
-  object-position: right;
+  object-fit:fill;
+  object-position: center;
   border-radius: 40%;
 }
 
 /*------------- Education Styling -------------*/
+html,body{
+  margin: 0;
+}
 
 #education{
   padding: 20px 0;
   background: #F2E5D7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #education h2{
