@@ -11,7 +11,6 @@
 
 body{
     font-family: "Poppins",sans-serif;
-    margin: 0;
 }
 
 /*-------- Utility Classes -----------*/
@@ -21,7 +20,6 @@ body{
   align-items: center;
   justify-content: center;
   height: 100%;
-  flex-direction: column;
 }
 
 .btn{
@@ -200,9 +198,14 @@ body{
 #education{
   padding: 20px 0;
   background: #F2E5D7;
-  display: block;
+}
+
+.education-container{
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 120%;
 }
 
 #education h2{
