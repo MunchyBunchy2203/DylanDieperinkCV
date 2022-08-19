@@ -256,13 +256,13 @@ body{
   padding: 20px 0;
   background-color: #fff;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 .certification-container{
-  display: block;
-  flex-wrap:nowrap;
-  height: 750px;
+  display:block;
+  flex-wrap: wrap;
+  height: 400px;
 }
 
 #certification h2{
@@ -273,7 +273,6 @@ body{
 }
 
 #certification .cardbox{
-  float: left;
   font-size: 1.2em;
   margin: 1% 0 0 1%;
   perspective: 800px;
@@ -289,19 +288,22 @@ body{
   background: linear-gradient(45deg,#E65C4F,#fff,#E65C4F);
   cursor: default;
   height: 350px;
-  border: none;
   border-radius: 40px 10px;
   transform-style: preserve-3d;
   transition: transform 0.4s ease 0s;
   width: 50%;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
+  display: block;
+  float: left;
+  left: 50%;
 }
 
 #certification .card p,h3{
   margin-bottom: 2.8em;
   text-align: center;
 }
+
 
 #certification .card .front,
 .card .back{
@@ -322,7 +324,7 @@ body{
   color: #262322;
   font-size: 1.5em;
   line-height: 50px;
-  padding: 0 7px 4px 6px;
+  padding: 0px 7px 4px 6px;
 }
 
 #certification .card .back{
@@ -343,10 +345,6 @@ body{
 #certification img{
   height: 350px;
   width: 100%;
-}
-
-#certification .HP .card{
-  float: right;
 }
 
 @-webkit-keyframes giro{
