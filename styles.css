@@ -182,7 +182,7 @@ body{
 }
 
 .about-img img {
-  display: block;
+  display: flexbox;
   height: 400px;
   max-width: 100%;
   margin: auto;
