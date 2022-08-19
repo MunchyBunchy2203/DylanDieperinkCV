@@ -261,7 +261,7 @@ body{
 
 .certification-container{
   display: block;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
   height: 750px;
 }
 
@@ -443,10 +443,10 @@ body{
 #experience .container::before { /* line for both sides */
   content: '';
   position: absolute;
-  width: 40%;
+  width: 50%;
   height: 2px;
   top: calc(1% - 1px);
-  left: 60%;
+  left: 50%;
   background: #6f5adc;
   z-index: 1;
 }
