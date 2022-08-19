@@ -427,8 +427,8 @@ body{
   position: absolute;
   width: 16px;
   height: 16px;
-  top: calc(50% - 8px);
-  right: -8px;
+  top: calc(1% - 8px);
+  right: 0px;
   background: #36323C;
   border: 2px solid #6f5adc;
   border-radius: 16px;
@@ -444,8 +444,8 @@ body{
   position: absolute;
   width: 60px;
   height: 2px;
-  top: calc(50% - 1px);
-  right: 8px;
+  top: calc(1% - 1px);
+  right: 0%;
   background: #6f5adc;
   z-index: 1;
 }
@@ -481,7 +481,7 @@ body{
   width: 40px;
   height: 40px;
   padding: 9px 0;
-  top: calc(50% - 20px);
+  top: calc(1% - 20px);
   background: #36323C;
   border: 2px solid #6f5adc;
   border-radius: 40px;
@@ -492,11 +492,11 @@ body{
 }
 
 #experience .container.left .icon {
-  left: 56px;
+  left: 40%;
 }
 
 #experience .container.right .icon {
-  left: 56px;
+  left: 40%;
 }
 
 #experience .container .content {
