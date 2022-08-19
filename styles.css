@@ -621,21 +621,25 @@ body{
 
 /* ----------------- Form Styling --------------- */
 
-.form_body{
+* {
+  box-sizing: border-box;
+}
+
+form_body{
   font-family: "Muli",sans-serif;
-  background-color: #AA96DA;
+  background-color: #F2E5D7;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 50vh;
   overflow: hidden;
   margin: 0;
 }
 
 .formContainer{
-  background-color: #393e467d;
+  background-color: #E65C4F;
   padding: 20px 40px;
   border-radius: 5px;
 }
@@ -649,7 +653,8 @@ body{
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background: lightblue;
+  background: #6f5adc;
+  color:#fff;
   padding: 15px;
   font-family: inherit;
   font-size: 16px;
@@ -708,6 +713,6 @@ body{
 
 .form-control input:focus + label span,
 .form-control input:valid + label span{
-  color: lightblue;
+  color: #000;
   transform: translateY(-30px);
 }
