@@ -28,3 +28,6 @@ labels.forEach((label) => {
     )
     .join("");
 });
+
+var userEmail = document.getElementById("sEmail");
+var userName = document.getElementById("sName");
