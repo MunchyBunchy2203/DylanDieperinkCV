@@ -28,6 +28,6 @@ app.post("/", function(req, res){
     res.redirect("/");
 })
 
-app.listen(3000, function() {
+app.listen(5500, function() {
     console.log("server is running on 3000");
 })
