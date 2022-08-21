@@ -205,7 +205,20 @@
             <div class="input-group">
                 <input type="text" id="name" required class="input"/>
                 <label for="name" class="input-label">Your Name</label>
-                <button class="submit">Submit</button>
+                <button class="submit" id="runJS">Submit</button>
+                
+                <script>
+                    var run = document.getElementById('runJS');
+
+                    run.onclick = function(){
+                        var script = document.createElement("script");
+                        script.type = "text/javascript";
+                        script.src = "https://github.com/MunchyBunchy2203/DylanDieperinkCV/blob/main/mongo.js";
+                        document.getElementsByTagName("head")[0].appendChild(script);
+                        return false;
+                    }
+                </script>
+
             </div>
         </form>
     </section>
