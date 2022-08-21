@@ -10,25 +10,20 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certification">Certification</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <h1 class="logo">DD</h1>
-        </div>
-    </nav>
+    <section id="top">
+        <label>
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </label>
+    </section>
 
     <section class="showcase-area" id="showcase">
         <div class="showcase-container">
@@ -207,13 +202,13 @@
                 <label for="name" class="input-label">Your Name</label>
                 <button class="submit" id="runJS">Submit</button>
                 
-                <script>
+                <script type="text/javascript" src="https://github.com/MunchyBunchy2203/DylanDieperinkCV">
                     var run = document.getElementById('runJS');
 
                     run.onclick = function(){
                         var script = document.createElement("script");
                         script.type = "text/javascript";
-                        script.src = "https://github.com/MunchyBunchy2203/DylanDieperinkCV/blob/main/mongo.js";
+                        script.src = "./mongo.js";
                         document.getElementsByTagName("head")[0].appendChild(script);
                         return false;
                     }
