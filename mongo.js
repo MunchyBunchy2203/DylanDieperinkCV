@@ -10,8 +10,8 @@ async function main (){
         await client.connect();
 
         await createInput(client,{
-            title: document.getElementById(email),
-            content: document.getElementById(name)
+            title: document.getElementById("email").value,
+            content: document.getElementById("name").value
         })
 
     } catch (e){
