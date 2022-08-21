@@ -1,0 +1,13 @@
+Document = JS object
+
+Document +-=  row
+
+Group of Documents = Collection
+
+Collection +-= Table
+
+Document required field of ( _id ) which is a unique vaule in a Document
+
+https://www.mongodb.com/basics
+
+CRUD = Create Read Update Delete
