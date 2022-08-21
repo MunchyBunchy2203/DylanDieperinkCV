@@ -659,10 +659,6 @@ label a {
 
 /* ----------------- Form Styling --------------- */
 
-#inputs{
-  align-items: center;
-}
-
 #inputs h1{
   font-size: 2.3rem;
   padding: 20px;
@@ -686,18 +682,18 @@ label a {
 }
 
 #inputs .input-label{
-  position: absolute;
+  position:absolute;
   top: 10;
   left: 0;
-  transform: translate(25px, 10px);
+  transform: translate(30%, 30%);
   transform-origin: left;
   transition: transform .25s;
 }
 
 #inputs .input:focus+.input-label,
 #inputs .input:valid+.input-label{
-  transform: translate(0, -30px) scale(.8);
-  color: #6f5adc;
+  transform: translate(20px, 60%) scale(.8);
+  color: transparent;
 }
 
 #inputs .input:is(:focus, :valid){
@@ -709,11 +705,12 @@ label a {
   background-color: #E65C4F;
   cursor: pointer;
   width: 80px;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   font-family: inherit;
   font-size: 16px;
   border: 0;
-  border-radius: 5px;
+  border-radius: 50px;
+  position: absolute;
 }
 
 #inputs .submit:focus{
