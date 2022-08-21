@@ -621,98 +621,71 @@ body{
 
 /* ----------------- Form Styling --------------- */
 
-* {
-  box-sizing: border-box;
-}
-
-form_body{
-  font-family: "Muli",sans-serif;
-  background-color: #F2E5D7;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
+#inputs{
   align-items: center;
-  justify-content: center;
-  height: 50vh;
-  overflow: hidden;
-  margin: 0;
 }
 
-.formContainer{
+#inputs h1{
+  font-size: 2.3rem;
+  padding: 20px;
+  text-align: left;
+  color: #262322;
+}
+
+#inputs .input-group{
+  position: relative;
+  padding: 20px;
+}
+
+#inputs .input{
+  padding: 10px 0px 10px 10px;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  color: #E65C4F;
+  background-color: transparent;
+  outline: 2px solid #E65C4F;
+}
+
+#inputs .input-label{
+  position: absolute;
+  top: 10;
+  left: 0;
+  transform: translate(25px, 10px);
+  transform-origin: left;
+  transition: transform .25s;
+}
+
+#inputs .input:focus+.input-label,
+#inputs .input:valid+.input-label{
+  transform: translate(0, -30px) scale(.8);
+  color: #6f5adc;
+}
+
+#inputs .input:is(:focus, :valid){
+  outline-color: #6f5adc;
+}
+
+#inputs .submit{
+  color: #6f5adc;
   background-color: #E65C4F;
-  padding: 20px 40px;
-  border-radius: 5px;
-}
-
-.formContainer h1{
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.submit{
   cursor: pointer;
-  display: inline-block;
-  width: 100%;
-  background: #6f5adc;
-  color:#fff;
-  padding: 15px;
+  width: 80px;
+  padding: 10px;
   font-family: inherit;
   font-size: 16px;
   border: 0;
   border-radius: 5px;
 }
 
-.submit:focus{
+#inputs .submit:focus{
   outline: 0;
 }
 
-.submit:active{
+#inputs .submit:active{
   transform: scale(0.98);
 }
 
-.text{
-  margin-top: 30px;
-}
-
-.form-control{
-  position: relative;
-  margin: 20px 0 40px;
-  width: 300px;
-}
-
-.form-control input{
-  background-color: transparent;
-  border: 0;
-  border-bottom: 2px #fff solid;
-  display: block;
-  width: 100%;
-  padding: 15px 0;
-  font-size: 18px;
-  color: #fff;
-}
-
-.form-control input:focus,
-.form-control input:valid{
-  outline: 0;
-  border-bottom-color: lightblue;
-}
-
-.form-control label{
-  position: absolute;
-  top: 15px;
-  left: 0;
-  pointer-events: none;
-}
-
-.form-control label span{
-  display: inline-block;
-  font-size: 18px;
-  min-width: 5px;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.form-control input:focus + label span,
-.form-control input:valid + label span{
-  color: #000;
-  transform: translateY(-30px);
+#inputs .input-group .button{
+  co
 }

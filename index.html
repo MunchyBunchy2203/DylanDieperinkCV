@@ -195,22 +195,21 @@
 
     </section>
 
-    <form_body>
-    <div class="formContainer" method="post" action="/">
+    <section id="inputs">
         <h1>Please populate me</h1>
         <form id="inputForm">
-            <div class="form-control">
-                <input name="sEmail" type="text" required />
-                <label>Your Email</label>
+            <div class="input-group">
+                <input type="text" id="email" required class="input"/>
+                <label for="email" class="input-label">Your Email</label>
             </div>
-            <div class="form-control">
-                <input name="sName" type="text" required />
-                <label>Your Name</label>
+            <div class="input-group">
+                <input type="text" id="name" required class="input"/>
+                <label for="name" class="input-label">Your Name</label>
+                <button class="submit">Submit</button>
             </div>
-            <button class="submit">Submit</button>
         </form>
-    </div>
-    </form_body>
+    </section>
+
 
 
 </body>
